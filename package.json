@@ -1,0 +1,30 @@
+{
+  "name": "electron_auto_update3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "marcelocarneiro",
+        "repo": "electron-auto-update"
+      }
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^24.4.0"
+  },
+  "dependencies": {
+    "electron-log": "^4.4.8",
+    "electron-updater": "^5.3.0"
+  }
+}
